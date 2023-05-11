@@ -2,10 +2,19 @@
   "name": "hardhat-project",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
-    "hardhat": "^2.14.0"
+    "hardhat": "^2.14.0",
+    "html-webpack-plugin": "^5.5.1",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack server --open"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.3",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1"
   }
 }
